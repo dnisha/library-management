@@ -23,27 +23,32 @@ namespace WebApplication1
         protected void LinkButton4_Click1(object sender, EventArgs e)
         {
             //go buton
+            getMemberByID();
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             //active
+            updateMemberStatusByID("active");
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
             //pending
+            updateMemberStatusByID("pending");
 
         }
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
             //deactive
+            updateMemberStatusByID("deactive");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             //delete
+            deleteMemberByID();
         }
 
         // user defined function
